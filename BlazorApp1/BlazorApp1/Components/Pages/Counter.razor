@@ -9,14 +9,19 @@
 
 <button class="btn btn-primary" @onclick="()=>currentCount+=IncrementAmount">Click me</button>
 
-<div>
+<div class="m-4">
     <input type="text" @oninput="HandleInput" />
     <p>@text</p>
+</div>
+
+<div style="border: 1px solid black;" @onmouseover="MouseOver">
+    <p>@divText</p>
 </div>
 
 @code {
     private int currentCount = 0;
     private string text = "";
+    private string divText = "";
 
     [Parameter]
     public int IncrementAmount { get; set; } = 1;
@@ -28,5 +33,9 @@
     private void HandleInput(ChangeEventArgs e)
     {
         text = (string)e.Value!;
+    }
+    private void MouseOver(MouseEventArgs e)
+    {
+        divText = "You are hovering over the div.";
     }
 }
