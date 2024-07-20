@@ -9,3 +9,16 @@ This framework allows us to build our entire web app from the front end to the b
 In Blazor, components can be rendered from both the server and the client to deliver the best possible web app experience. Depending on the interactivity required, different components or even pages within the same application can be rendered from the server, the client, or a combination of both.
 
 Blazor is not limited to web applications; it is also capable of building native mobile and desktop apps through a hybrid approach known as Blazor Hybrid, blending native and web technologies.
+
+## Project Structure
+
+MyBlazorApp/
+│
+├── Components/ # Reusable UI components
+│ ├── App.razor # App/root component
+│ ├── Pages/ # Razor pages
+│ └── Layouts/ # Layout components
+│
+├── wwwroot/ # Static assets (CSS, JS, images)
+│
+└── Program.cs # Client-side entry point
