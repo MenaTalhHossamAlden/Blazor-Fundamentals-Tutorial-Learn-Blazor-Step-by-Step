@@ -12,14 +12,14 @@ Blazor is not limited to web applications; it is also capable of building native
 
 ## Project Structure
 
-MyBlazorApp/
+MyBlazorApp/\
 │\
-├── Components/ # Reusable UI components 
-│   ├── App.razor # App/root component
-│   ├── Pages/ # Razor pages 
-│   └── Layouts/ # Layout components
+├── Components/ # Reusable UI components\
+│   ├── App.razor # App/root component\
+│   ├── Pages/ # Razor pages\ 
+│   └── Layouts/ # Layout components\
 │\
-├── wwwroot/ # Static assets (CSS, JS, images)
+├── wwwroot/ # Static assets (CSS, JS, images)\
 │\
 └── Program.cs # Client-side entry point  
 
