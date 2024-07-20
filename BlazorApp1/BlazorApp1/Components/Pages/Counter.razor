@@ -10,7 +10,7 @@
 <button class="btn btn-primary" @onclick="()=>currentCount+=IncrementAmount">Click me</button>
 
 <div class="m-4">
-    <input type="text" @onkeydown="HandleKey" />
+    <input type="text" @onfocus="HandleFocus" @onblur="HandleBlur" />
     <p>@text</p>
 </div>
 
@@ -41,5 +41,13 @@
     private void HandleKey(KeyboardEventArgs e)
     {
         text = e.Key;
+    }
+    private void HandleBlur(FocusEventArgs e)
+    {
+        text = "You are not typing. You have clicked away";
+    }
+    private void HandleFocus(FocusEventArgs e)
+    {
+        text = "You are typing...";
     }
 }
