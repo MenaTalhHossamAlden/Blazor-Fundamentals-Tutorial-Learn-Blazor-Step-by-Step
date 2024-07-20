@@ -16,10 +16,10 @@ MyBlazorApp/\
 │\
 ├── Components/ # Reusable UI components\
 │   ├── App.razor # App/root component\
-│   ├── Pages/ # Razor pages\ 
+│   ├── Pages/ # Razor pages\
 │   └── Layouts/ # Layout components\
 │\
 ├── wwwroot/ # Static assets (CSS, JS, images)\
 │\
-└── Program.cs # Client-side entry point  
+└── Program.cs # Client-side entry point
 
