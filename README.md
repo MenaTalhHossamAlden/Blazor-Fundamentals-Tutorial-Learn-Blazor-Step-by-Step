@@ -23,3 +23,20 @@ MyBlazorApp/\
 │\
 └── Program.cs # Client-side entry point
 
+## Data Binding
+
+Connecting our application's UI with underlying data sources can be achieved through data binding. There are two types of data binding in Blazor:
+
+### One-Way Data Binding
+
+One-way data binding allows data to flow in a single direction. This is typically used when you need to display data from your C# code or a database in the UI.
+
+#### Example:
+```razor
+<h3>One-Way Data Binding</h3>
+
+<p>@message</p>
+
+@code {
+    private string message = "Hello, Blazor!";
+}
