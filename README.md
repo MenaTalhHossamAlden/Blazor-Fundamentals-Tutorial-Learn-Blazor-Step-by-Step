@@ -12,7 +12,7 @@ Blazor is not limited to web applications; it is also capable of building native
 
 ## Project Structure
 
-# MyBlazorApp/
+MyBlazorApp/
 │\
 ├── Components/ # Reusable UI components\  
 │   ├── App.razor # App/root component\
