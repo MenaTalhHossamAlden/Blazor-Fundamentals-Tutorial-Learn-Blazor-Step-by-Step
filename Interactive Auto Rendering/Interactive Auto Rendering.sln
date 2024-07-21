@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interactive Auto Rendering", "Interactive Auto Rendering\Interactive Auto Rendering\Interactive Auto Rendering.csproj", "{04A92310-3CB4-4740-9DC5-0E0EB29E5CCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interactive Auto Rendering.Client", "Interactive Auto Rendering\Interactive Auto Rendering.Client\Interactive Auto Rendering.Client.csproj", "{4E74A6DE-6C37-4DF9-B0EB-197EB9304482}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04A92310-3CB4-4740-9DC5-0E0EB29E5CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04A92310-3CB4-4740-9DC5-0E0EB29E5CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04A92310-3CB4-4740-9DC5-0E0EB29E5CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04A92310-3CB4-4740-9DC5-0E0EB29E5CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E74A6DE-6C37-4DF9-B0EB-197EB9304482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E74A6DE-6C37-4DF9-B0EB-197EB9304482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E74A6DE-6C37-4DF9-B0EB-197EB9304482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E74A6DE-6C37-4DF9-B0EB-197EB9304482}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD3C6015-FCED-4766-9F5F-603C5FB81A38}
+	EndGlobalSection
+EndGlobal
