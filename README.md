@@ -72,21 +72,58 @@ Streaming rendering allows your application to render parts of a web page or com
 
 With streaming rendering in Blazor, the server starts sending HTML content to the client as soon as it's available, rather than waiting for the entire page or component to be fully available. You usually see some placeholder content, like loading messages, on the screen. This allows users to interact with the application sooner, even before the content is fully loaded. When the asynchronous tasks complete, the rest of the content will be rendered.
 
+
 # Interactive Rendering Modes in Blazor
 
 To create fully interactive Blazor components capable of handling UI events from the browser, Blazor offers two primary interactive render modes: Interactive Server Rendering and Interactive WebAssembly Rendering.
 
-### Interactive Server Rendering
+![Interactive Server Rendering](https://github.com/user-attachments/assets/ab8aee30-3da0-4b89-8090-164de6fa8f26)
+
+## Interactive Server Rendering
 
 Interactive Server Rendering manages UI events from the server via a WebSocket connection with the browser. Blazor transmits UI events to the server through this connection, then Blazor updates the browser DOM with the rendered changes.
 
-#### How It Works
+### How It Works
 
 1. **UI Event Handling**: When a user interacts with the UI (e.g., clicks a button), the event is sent to the server over a WebSocket connection.
 2. **Server-Side Processing**: The server processes the event, updates the application state, and renders the necessary changes.
 3. **DOM Update**: The server sends the updated HTML back to the client, where Blazor updates the DOM accordingly.
 
-![Interactive Server Rendering](https://github.com/user-attachments/assets/ab8aee30-3da0-4b89-8090-164de6fa8f26)
+### Advantages and Disadvantages
 
+- **Advantages**:
+  - Quick initial load times since only necessary data is sent.
+  - Server-side rendering ensures the application logic remains on the server.
+- **Disadvantages**:
+  - Requires a constant open connection with the server, which can increase server costs.
+  - Potential latency issues due to round-trip time between client and server.
+
+## Interactive WebAssembly Rendering
+
+Alternatively, Blazor components can utilize the Interactive WebAssembly Render Mode for interactive rendering on the client side. In this mode, the component code is downloaded to the browser and executed client-side using a WebAssembly-based .NET runtime.
+
+### How It Works
+
+1. **Client-Side Execution**: The Blazor app runs in the browser using WebAssembly.
+2. **UI Event Handling**: When a user interacts with the UI, the event is processed directly in the browser without involving the server.
+3. **DOM Update**: The application state is updated, and the DOM is modified accordingly on the client-side.
+
+### Advantages and Disadvantages
+
+- **Advantages**:
+  - Reduces server workload by offloading processing to the client.
+  - No constant server connection required, eliminating latency issues related to server round-trips.
+- **Disadvantages**:
+  - Initially has a longer load time while the .NET runtime is downloaded.
+  - The .NET runtime is cached for future use, improving load times on subsequent visits.
+
+## Summary
+
+Blazor offers two primary interactive render modes to handle UI events and application state:
+
+- **Interactive Server Rendering**: Manages UI events from the server via a WebSocket connection, transmitting events to the server and updating the browser DOM with rendered changes. This mode ensures server-side logic but requires a constant connection.
+- **Interactive WebAssembly Rendering**: Executes the Blazor app entirely on the client-side using WebAssembly, handling UI events and state directly in the browser. This mode offloads processing to the client, reducing server workload but has a longer initial load time.
+
+Both modes provide powerful capabilities for building fully interactive Blazor components, allowing you to choose the approach that best suits your application's needs.
 
 
