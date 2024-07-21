@@ -10,8 +10,8 @@
 <button class="btn btn-primary" @onclick="()=>currentCount+=IncrementAmount">Click me</button>
 
 <div class="m-4">
-    <input type="text" @bind="text" @bind:event="oninput"/>
-    <p>@text</p>
+    <input type="text" @bind="text" @bind:event="oninput" @bind:after="Search"/>
+    <p>@result</p>
 </div>
 
 <div style="border: 1px solid black;" @onmouseover="MouseOver">
@@ -21,6 +21,7 @@
 @code {
     private int currentCount = 0;
     private string text = "";
+    private string result = "";
     private string divText = "";
 
     [Parameter]
@@ -49,5 +50,10 @@
     private void HandleFocus(FocusEventArgs e)
     {
         text = "You are typing...";
+    }
+    async Task Search()
+    {
+        await Task.Delay(3000);
+        result = "150 results were found!";
     }
 }
