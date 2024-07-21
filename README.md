@@ -126,4 +126,10 @@ Blazor offers two primary interactive render modes to handle UI events and appli
 
 Both modes provide powerful capabilities for building fully interactive Blazor components, allowing you to choose the approach that best suits your application's needs.
 
+## Interactive Auto Render Mode
+
+There is also a third interactive render mode that combines the strengths of the previous two modes. Interactive Auto Render Mode components utilize both server-side and client-side rendering. Initially, the component is rendered from the server. While the initial render is happening, the .NET WebAssembly runtime is being downloaded in the background. Once the download is complete, the component automatically switches to WebAssembly-based rendering for future visits.
+
+
+
 
