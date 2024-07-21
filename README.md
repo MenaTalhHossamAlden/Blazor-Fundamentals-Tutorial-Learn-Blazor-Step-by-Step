@@ -57,3 +57,8 @@ Two-way data binding allows for a mutual exchange of data between the UI and the
 ```
 
 ## Render Modes
+### static server-side rendering
+By default, our components are statically rendered from the server. This means that as soon as a request is routed to our component, plain HTML will be rendered as a response from the server, and no state is maintained on the server. Static components are great when you do not need to handle UI events from users but only want to render some plain HTML.
+
+Most of the components in our default Blazor app are statically rendered, such as the homepage, the weather page, or the layout component.
+
