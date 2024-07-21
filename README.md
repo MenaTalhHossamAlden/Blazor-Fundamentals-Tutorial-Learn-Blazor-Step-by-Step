@@ -55,3 +55,5 @@ Two-way data binding allows for a mutual exchange of data between the UI and the
     private string name = string.Empty;
 }
 ```
+
+## Render Modes
