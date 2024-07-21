@@ -72,3 +72,21 @@ Streaming rendering allows your application to render parts of a web page or com
 
 With streaming rendering in Blazor, the server starts sending HTML content to the client as soon as it's available, rather than waiting for the entire page or component to be fully available. You usually see some placeholder content, like loading messages, on the screen. This allows users to interact with the application sooner, even before the content is fully loaded. When the asynchronous tasks complete, the rest of the content will be rendered.
 
+# Interactive Rendering Modes in Blazor
+
+To create fully interactive Blazor components capable of handling UI events from the browser, Blazor offers two primary interactive render modes: Interactive Server Rendering and Interactive WebAssembly Rendering.
+
+### Interactive Server Rendering
+
+Interactive Server Rendering manages UI events from the server via a WebSocket connection with the browser. Blazor transmits UI events to the server through this connection, then Blazor updates the browser DOM with the rendered changes.
+
+#### How It Works
+
+1. **UI Event Handling**: When a user interacts with the UI (e.g., clicks a button), the event is sent to the server over a WebSocket connection.
+2. **Server-Side Processing**: The server processes the event, updates the application state, and renders the necessary changes.
+3. **DOM Update**: The server sends the updated HTML back to the client, where Blazor updates the DOM accordingly.
+
+![Interactive Server Rendering](https://github.com/user-attachments/assets/ab8aee30-3da0-4b89-8090-164de6fa8f26)
+
+
+
