@@ -62,7 +62,7 @@ By default, our components are statically rendered from the server. This means t
 
 Most of the components in our default Blazor app are statically rendered, such as the homepage, the weather page, or the layout component.
 
-# Enhanced Navigation & Form Handling in Blazor
+#### Enhanced Navigation & Form Handling in Blazor
 
 Blazor can enhance page navigation and form handling. Enhanced navigation in Blazor allows users to navigate between different pages or components within a Blazor application while preserving the application state. Users can transition between different views faster and smoother without full page reloads. What happens in the background is that Blazor intercepts the navigation and makes a fetch request to the server. Blazor receives the HTML from the server and then applies the needed changes to the DOM. Blazor enhanced navigation by default while forms can be optionally enhanced if you want to.
 
