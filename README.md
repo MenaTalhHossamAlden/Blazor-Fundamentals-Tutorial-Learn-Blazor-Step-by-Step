@@ -66,4 +66,9 @@ Most of the components in our default Blazor app are statically rendered, such a
 
 Blazor can enhance page navigation and form handling. Enhanced navigation in Blazor allows users to navigate between different pages or components within a Blazor application while preserving the application state. Users can transition between different views faster and smoother without full page reloads. What happens in the background is that Blazor intercepts the navigation and makes a fetch request to the server. Blazor receives the HTML from the server and then applies the needed changes to the DOM. Blazor enhanced navigation by default while forms can be optionally enhanced if you want to.
 
+### streaming rendering
+
+Streaming rendering allows your application to render parts of a web page or component as data becomes available from the server. This mode is particularly useful when your page needs to perform some long asynchronous tasks before it fully renders, such as making a fetch request to an API or pulling data from the database. 
+
+With streaming rendering in Blazor, the server starts sending HTML content to the client as soon as it's available, rather than waiting for the entire page or component to be fully available. You usually see some placeholder content, like loading messages, on the screen. This allows users to interact with the application sooner, even before the content is fully loaded. When the asynchronous tasks complete, the rest of the content will be rendered.
 
