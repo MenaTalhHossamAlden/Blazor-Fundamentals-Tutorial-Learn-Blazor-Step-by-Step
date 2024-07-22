@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Interactive_Auto_Rendering.props" />
+</Project>

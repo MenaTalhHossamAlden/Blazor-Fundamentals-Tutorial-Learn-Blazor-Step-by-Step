@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Cloned Repositories\\Blazor\\Interactive Auto Rendering\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4E74A6DE-6C37-4DF9-B0EB-197EB9304482}|Interactive Auto Rendering\\Interactive Auto Rendering.Client\\Interactive Auto Rendering.Client.csproj|d:\\cloned repositories\\blazor\\interactive auto rendering\\interactive auto rendering\\interactive auto rendering.client\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E74A6DE-6C37-4DF9-B0EB-197EB9304482}|Interactive Auto Rendering\\Interactive Auto Rendering.Client\\Interactive Auto Rendering.Client.csproj|solutionrelative:interactive auto rendering\\interactive auto rendering.client\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "D:\\Cloned Repositories\\Blazor\\Interactive Auto Rendering\\Interactive Auto Rendering\\Interactive Auto Rendering.Client\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "Interactive Auto Rendering\\Interactive Auto Rendering.Client\\Pages\\Counter.razor",
+              "ToolTip": "D:\\Cloned Repositories\\Blazor\\Interactive Auto Rendering\\Interactive Auto Rendering\\Interactive Auto Rendering.Client\\Pages\\Counter.razor",
+              "RelativeToolTip": "Interactive Auto Rendering\\Interactive Auto Rendering.Client\\Pages\\Counter.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-21T17:14:09.502Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

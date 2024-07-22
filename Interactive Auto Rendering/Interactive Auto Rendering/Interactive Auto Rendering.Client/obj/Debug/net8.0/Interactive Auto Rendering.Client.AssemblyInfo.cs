@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Interactive_Auto_Rendering.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3d8e59a7ca75c67e5e23f73076e25aefdbacdac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f550514fdeef0585960cc50826389b3e4a9d7ec")]
 [assembly: System.Reflection.AssemblyProductAttribute("Interactive_Auto_Rendering.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Interactive_Auto_Rendering.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
